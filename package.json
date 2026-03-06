@@ -1,0 +1,51 @@
+{
+  "name": "reaper-jsfx",
+  "displayName": "REAPER JSFX Syntax Highlighter",
+  "description": "Syntax highlighting for REAPER JSFX / EEL2 effects scripting language",
+  "version": "1.0.0",
+  "publisher": "elijahlucian",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ELI7VH/reaper-jsfx-syntax"
+  },
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.75.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "keywords": [
+    "jsfx",
+    "reaper",
+    "eel2",
+    "dsp",
+    "audio"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "jsfx",
+        "aliases": [
+          "JSFX",
+          "REAPER JSFX",
+          "EEL2"
+        ],
+        "extensions": [
+          ".jsfx"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "jsfx",
+        "scopeName": "source.jsfx",
+        "path": "./syntaxes/jsfx.tmLanguage.json"
+      }
+    ]
+  },
+  "devDependencies": {
+    "@vscode/vsce": "^3.7.1"
+  }
+}
